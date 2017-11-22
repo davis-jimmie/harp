@@ -1,0 +1,26 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 2px solid;
+	border-color: black; //$color__border-button; <-- __'s default
+	//border-radius: 3px; <-- __'s default
+	background: transparent;     //$color__background-button; <-- __'s default
+	color: rgba(0, 0, 0, .8);
+	@include font-size(1);
+	line-height: 1;
+	padding: .5em 1em;
+
+	/* __'s default
+	&:hover {
+		border-color: $color__border-button-hover;
+	}
+	*/
+
+	&:hover,
+	&:active,
+	&:focus {
+		background: white;     //border-color: $color__border-button-focus; __'s default
+		color: #000000;
+	}
+}

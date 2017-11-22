@@ -1,0 +1,105 @@
+
+
+.header-image {
+  max-height: 60vh;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100vw;
+  }
+}
+
+.site-header {
+  padding: 1em;
+  font-family: $font__sans;
+  color: #fff;
+  background-color: $color__skin;
+  width: 100%;
+
+  @media screen and (min-width: $query_small) {
+    padding: 1em 2em;
+  }
+}
+
+.site-branding {
+  min-height: 80px;
+  display: flex;
+}
+
+.custom-logo-link {
+    margin-right: 1em;
+
+  img {
+    width: 80px;
+    display: block;
+    height: auto;
+    padding-top: 20px;
+  }
+
+}
+
+.site-branding__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 80px;
+
+}
+
+.site-title {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6em;
+  font-weight: 900;
+  line-height: 1em;
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+.site-description {
+  margin: 0;
+  font-size: .9em;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.main-navigation {
+  a {
+    color: whitesmoke;
+  }
+}
+
+
+@media screen and (min-width: $query_medium) {
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .site-branding {
+    width: 35%;
+    flex:1 0 auto;
+  }
+
+  .main-navigation {
+    width: 55%;
+  }
+
+}
+
+/*
+Header Menu
+ */
+
+@import "header-menu";
